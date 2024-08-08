@@ -2,7 +2,7 @@ import { formatAmount } from '@/lib/utils'
 import React from 'react'
 import CountUp from 'react-countup'
 import AnimatedCounter from '../AnimatedCounter'
-
+import DoughntChart from "../DoughnutChart.tsx"
 
 const TotalBalanceBox = ({
     accounts = [], totalBanks, totalCurrentBalance
@@ -12,6 +12,7 @@ const TotalBalanceBox = ({
     <section className='total-balance'>
         <div className='total-balance-chart'>
                 {/* DoughntChart */}
+                <DoughntChart accounts={accounts}/>
 
         </div>
 
